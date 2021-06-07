@@ -13,11 +13,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Glass House Pictures</title>
 
-<link rel="dns-prefetch" href="//fonts.googleapis.com">
-<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
-<link rel="stylesheet" id="ushop-body-fonts-css" href="//fonts.googleapis.com/css?family=Ubuntu%3A400&amp;ver=5.7.2" type="text/css" media="all">
-<link rel="stylesheet" id="ushop-heading-fonts-css" href="//fonts.googleapis.com/css?family=Ubuntu%3A500&amp;ver=5.7.2" type="text/css" media="all">
-  <link rel="icon" href="https://glasshousepictures.com.au/wp-content/uploads/2021/06/glasshousepictures_feather-150x150.png" sizes="32x32">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+  <link rel="stylesheet" id="ushop-body-fonts-css" href="//fonts.googleapis.com/css?family=Ubuntu%3A400&amp;ver=5.7.2" type="text/css" media="all">
+  <link rel="stylesheet" id="ushop-heading-fonts-css" href="//fonts.googleapis.com/css?family=Ubuntu%3A500&amp;ver=5.7.2" type="text/css" media="all">
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
   <!--
@@ -37,7 +36,7 @@
       height: -webkit-fill-available;
     }
     body {
-      background-image: url("https://glasshousepictures.com.au/wp-content/uploads/2021/06/glasshousepictures_gulls_on_the_beach-1.jpg");
+      background-image: url("https://glasshousepictures.com.au/wp-content/uploads/2021/06/glasshousepictures_gulls_on_the_beach.jpg");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -132,7 +131,7 @@
     }
 
     #glasshousepictures-logo {
-      background-image: url("https://glasshousepictures.com.au/wp-content/uploads/2021/06/glasshousepictures_feather.png");
+      // background-image: url("https://glasshousepictures.com.au/wp-content/uploads/2021/06/glasshousepictures_feather.png");
       background-size: 30px 30px;
       width: 30px;
       height: 30px;
@@ -224,14 +223,14 @@
           <div class="column">
             <div class="ghp-logo-wrapper">
               <h2>Glass House Pictures</h2>
-              <img class="ghp-logo glasshousepictures-logo" src="https://glasshousepictures.com.au/wp-content/uploads/2021/06/glasshousepictures_logo-1.png"
+              <img class="ghp-logo glasshousepictures-logo" src="https://glasshousepictures.com.au/wp-content/uploads/2021/06/glasshousepictures_log_745_x_745.png"
                 alt="Glass House Pictures">
             </div>
           </div>
           <div class="column">
             <div class="ghp-logo-wrapper">
               <h2>Alexander Calder Visual Arts</h2>
-              <img class="ghp-logo" src="https://glasshousepictures.com.au/wp-content/uploads/2021/06/glasshousepictures_acva_logo-1.png" alt="Alexander Calder Visual Arts">
+              <img class="ghp-logo" src="https://glasshousepictures.com.au/wp-content/uploads/2021/06/ACVA_logo_RGB.FA_.png" alt="Alexander Calder Visual Arts">
             </div>
           </div>
         </div>
@@ -241,7 +240,7 @@
   <footer class="footer">
     <section class="container">
       <p class="copyright">
-        <span>Copyright © 2021 Jane Alexander</span>
+        <span>© Jane Alexander</span>
       </p>
       <nav class="nav">
         <a class="link link-twitter" href="#twitter" rel="noopener" target="_blank" title="Glass House Pictures on Twitter">
