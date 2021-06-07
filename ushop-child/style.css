@@ -1,0 +1,17 @@
+/*
+Theme Name: Ushop Child
+Theme URI: https://pagely.com/blog
+Description: Ushop child
+Author: Sarah Alexander
+Author URI: https://pagely.com/blog
+Version: 1.0.0
+Template: ushop
+*/
+
+.site-info {
+	display: none;
+}
+.custom-logo-link {
+	width: 30px;
+	height: 30px;
+}
