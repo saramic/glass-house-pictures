@@ -42,9 +42,9 @@
 
     @font-face {
       font-family: 'Nunito';
-      src: url('transfonter.org-20210608-085439/Nunito-Regular.woff') format('woff'),
+      src: url('https://glasshousepictures.com.au/wp-content/themes/ushop-child/Nunito-Regular.woff') format('woff'),
         /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-        url('Nunito/Nunito-Regular.ttf') format('truetype');
+        url('https://glasshousepictures.com.au/wp-content/themes/ushop-child/Nunito-Regular.ttf') format('truetype');
       /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
     }
 
@@ -263,8 +263,8 @@
           <div class="column">
             <div class="ghp-logo-wrapper">
               <h2>Glasshouse Pictures</h2>
-              <img class="ghp-logo glasshousepictures-logo" src="GHP_logo_4col_solid.png"
-                notsrc="https://glasshousepictures.com.au/wp-content/uploads/2021/06/GHP_logo_4col_solid.png"
+              <img class="ghp-logo glasshousepictures-logo"
+                src="https://glasshousepictures.com.au/wp-content/uploads/2021/06/GHP_logo_4col_solid.png"
                 alt="Glasshouse Pictures">
             </div>
           </div>
