@@ -13,15 +13,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Glasshouse Pictures</title>
 
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
-  <link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
-  <link rel="stylesheet" id="ushop-body-fonts-css" href="//fonts.googleapis.com/css?family=Ubuntu%3A400&amp;ver=5.7.2" type="text/css" media="all">
-  <link rel="stylesheet" id="ushop-heading-fonts-css" href="//fonts.googleapis.com/css?family=Ubuntu%3A500&amp;ver=5.7.2" type="text/css" media="all">
-  <!-- Google Fonts -->
-  <link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
-  <!--
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-  -->
   <!-- CSS Reset -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <!-- Milligram CSS -->
@@ -32,21 +23,53 @@
       --color-primary: #4da2ca;
       --highlight-color: #4da2ca;
     }
-    html {
-      height: -webkit-fill-available;
+
+    /*
+    @font-face {
+      font-family: 'Nunito';
+      src: url('webfont.eot');
+      /* IE9 Compat Modes /
+      src: url('webfont.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 /
+        url('webfont.woff') format('woff'),
+        /* Modern Browsers /
+        url('webfont.ttf') format('truetype'),
+        /* Safari, Android, iOS /
+        url('webfont.svg#svgFontName') format('svg');
+      /* Legacy iOS /
     }
+    */
+
+    @font-face {
+      font-family: 'Nunito';
+      src: url('transfonter.org-20210608-085439/Nunito-Regular.woff') format('woff'),
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('Nunito/Nunito-Regular.ttf') format('truetype');
+      /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+    }
+
+    html,
     body {
-      background-image: url("https://glasshousepictures.com.au/wp-content/uploads/2021/06/glasshousepictures_gulls_on_the_beach.jpg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      // font-family: 'Roboto Slab', serif;
-      font-family: 'Ubuntu';
-      height: 100vh;
-      min-height: -webkit-fill-available;
+      height: 100%;
+    }
+
+    body {
       display: flex;
       flex-direction: column;
-      letter-spacing: 2px;
+      font-family: "Nunito";
+      display: grid;
+      grid-template-rows: 1fr auto;
+    }
+
+    .landing-hero {
+      background-image: url("https://glasshousepictures.com.au/wp-content/uploads/2021/06/early_am_fishermans_arm_dec_2020.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-height: 1152px !important;
+    }
+
+    main {
+      flex: 1 0 auto;
     }
 
     main.wrapper {
@@ -57,7 +80,7 @@
       color: var(--color-primary);
     }
 
-    .header > * {
+    .header>* {
       -moz-box-align: center;
       align-items: center;
       display: -moz-box;
@@ -98,12 +121,10 @@
     }
 
     .footer {
+      flex-shrink: 0;
       padding-top: 1em;
       font-size: 1.8rem;
-      text-shadow: 0 0 black;
       font-weight: 600;
-      color: #333333;
-      background-color: rgba(173, 133, 107, 0.7);
     }
 
     .footer .nav {
@@ -115,7 +136,6 @@
 
     .footer .nav .link {
       display: inline-block;
-      // margin-left: 1.2rem;
       padding: 0;
     }
 
@@ -125,13 +145,12 @@
     }
 
     .hero-container {
-      height: 100%;
       display: flex;
       justify-content: center;
     }
 
     #glasshousepictures-logo {
-      // background-image: url("https://glasshousepictures.com.au/wp-content/uploads/2021/06/glasshousepictures_feather.png");
+      background-image: url("https://glasshousepictures.com.au/wp-content/uploads/2021/06/rosella-body.png");
       background-size: 30px 30px;
       width: 30px;
       height: 30px;
@@ -156,7 +175,7 @@
     }
 
     .ghp-logo {
-      width: 200px;
+      width: 600px;
     }
 
     .ghp-dark {
@@ -171,6 +190,10 @@
       display: none;
     }
 
+    .hero-container {
+      margin-top: 106px;
+    }
+
     /* Larger than mobile screen */
     @media (min-width: 40.0rem) {
       .navigation h1.title {
@@ -178,35 +201,52 @@
       }
 
       .hero-container {
-        margin-top: 10em;
+        margin-top: 49px;
       }
 
       .footer .nav {
         position: absolute;
       }
+
+      .ghp-logo {
+        width: 500px;
+      }
+
+      .landing-hero {
+        background-position: top -110px center;
+      }
     }
 
     /* Larger than tablet screen */
-    @media (min-width: 80.0rem) {}
+    @media (min-width: 80.0rem) {
+      .hero-container {
+        margin-top: 150px;
+      }
+
+      .landing-hero {
+        max-height: 980px !important;
+      }
+    }
 
     /* Larger than desktop screen */
     @media (min-width: 120.0rem) {}
-      .footer .nav .link.link-twitter,
-      .footer .nav .link.link-call,
-      .footer .nav .link.link-facebook,
-      .footer .nav .link.link-instagram {
-        display: none;
-      }
+
+    .footer .nav .link.link-twitter,
+    .footer .nav .link.link-call,
+    .footer .nav .link.link-facebook,
+    .footer .nav .link.link-instagram {
+      display: none;
+    }
   </style>
 </head>
 
 <body>
-  <main class="wrapper">
+  <main class="wrapper landing-hero">
     <div class="ghp-dark navigation-wrapper">
       <section class="container">
         <nav class="navigation">
           <a class="navigation-title" href="https://glasshousepictures.com.au" title="Glasshouse Pictures">
-	    <div id="glasshousepictures-logo"></div>
+            <div id="glasshousepictures-logo"></div>
             <h1 class="title">Glasshouse Pictures</h1>
           </a>
           <ul class="navigation-list float-right">
@@ -223,14 +263,9 @@
           <div class="column">
             <div class="ghp-logo-wrapper">
               <h2>Glasshouse Pictures</h2>
-              <img class="ghp-logo glasshousepictures-logo" src="https://glasshousepictures.com.au/wp-content/uploads/2021/06/glasshousepictures_log_745_x_745.png"
+              <img class="ghp-logo glasshousepictures-logo" src="GHP_logo_4col_solid.png"
+                notsrc="https://glasshousepictures.com.au/wp-content/uploads/2021/06/GHP_logo_4col_solid.png"
                 alt="Glasshouse Pictures">
-            </div>
-          </div>
-          <div class="column">
-            <div class="ghp-logo-wrapper">
-              <h2>Alexander Calder Visual Arts</h2>
-              <img class="ghp-logo" src="https://glasshousepictures.com.au/wp-content/uploads/2021/06/ACVA_logo_RGB.FA_.png" alt="Alexander Calder Visual Arts">
             </div>
           </div>
         </div>
@@ -243,7 +278,8 @@
         <span>© Jane Alexander</span>
       </p>
       <nav class="nav">
-        <a class="link link-twitter" href="#twitter" rel="noopener" target="_blank" title="Glasshouse Pictures on Twitter">
+        <a class="link link-twitter" href="#twitter" rel="noopener" target="_blank"
+          title="Glasshouse Pictures on Twitter">
           <svg class="icon" viewBox="0 0 512 512">
             <g>
               <path
@@ -260,21 +296,24 @@
             </path>
           </svg>
         </a>
-        <a class="link link-call" href="#call" rel="noopener" target="_blank" title="Glasshous Pictures contact by phone">
+        <a class="link link-call" href="#call" rel="noopener" target="_blank"
+          title="Glasshous Pictures contact by phone">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
             <path
               d="M 22.386719 18.027344 C 20.839844 16.703125 19.265625 15.898438 17.738281 17.222656 L 16.824219 18.019531 C 16.15625 18.601563 14.914063 21.3125 10.113281 15.785156 C 5.3125 10.269531 8.167969 9.410156 8.839844 8.835938 L 9.757813 8.035156 C 11.277344 6.710938 10.703125 5.042969 9.605469 3.324219 L 8.945313 2.285156 C 7.84375 0.574219 6.640625 -0.550781 5.117188 0.769531 L 4.292969 1.492188 C 3.617188 1.980469 1.734375 3.578125 1.277344 6.609375 C 0.726563 10.246094 2.464844 14.414063 6.4375 18.984375 C 10.40625 23.558594 14.296875 25.855469 17.976563 25.816406 C 21.035156 25.78125 22.886719 24.140625 23.464844 23.542969 L 24.289063 22.820313 C 25.8125 21.5 24.867188 20.152344 23.316406 18.828125 Z">
             </path>
           </svg>
         </a>
-        <a class="link link-facebook" href="#facebook" rel="noopener" target="_blank" title="Glasshouse Pictures on Facebook">
+        <a class="link link-facebook" href="#facebook" rel="noopener" target="_blank"
+          title="Glasshouse Pictures on Facebook">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
             <path
               d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z">
             </path>
           </svg>
         </a>
-        <a class="link link-instagram" href="#instagram" rel="noopener" target="_blank" title="Glasshouse Pictures on Instagram">
+        <a class="link link-instagram" href="#instagram" rel="noopener" target="_blank"
+          title="Glasshouse Pictures on Instagram">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
             <path
               d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
