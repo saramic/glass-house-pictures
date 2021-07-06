@@ -17,8 +17,13 @@ get_header();
 }
 .ghp-logo {
   width: 40vw;
+  max-width: 635px;
   display: block;
   margin:auto
+}
+.ghp-hero-center {
+  margin: auto;
+  display: block;
 }
 </style>
 <script>
@@ -26,9 +31,7 @@ get_header();
   myDiv.classList.add("ghp-logo-wrapper");
   myDiv.innerHTML = '<img class="ghp-logo glasshousepictures-logo" src="https://glasshousepictures.com.au/wp-content/uploads/2021/06/GHP_logo_4col_solid.png" alt="Glasshouse Pictures">';
   document.querySelector(".hero-area.position-relative").appendChild(myDiv);
-// = "hi" 
-//  <div class="ghp-logo-wrapper">
-//  </div>
+  document.querySelector("section.hero-area img").classList.add("ghp-hero-center");
 </script>
     <main class="full-width-page">
         <section>
